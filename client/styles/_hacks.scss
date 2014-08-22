@@ -1,0 +1,11 @@
+//****************************************************
+//	Browser-specific or Vendor Hacks
+//****************************************************
+
+// Center Semantic-UI modals
+.ui.modal,
+.ui.small.modal,
+.ui.large.modal {
+	@include align();
+	margin-left: 0;
+}

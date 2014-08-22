@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <base href="/">
+    <title>Standdown</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1 user-scalable=no">
+    <link rel="author" href="humans.txt">
+
+    <!-- build:css styles/main.css -->
+    <!-- bower:css -->
+    <link rel="stylesheet" href="vendor/normalize-css/normalize.css" />
+    <link rel="stylesheet" href="vendor/semantic/build/packaged/css/semantic.css" />
+    <!-- endbower -->
+    <link rel="stylesheet" href="styles/main.css">
+    <!-- endbuild -->
+
+    <!-- Google Fonts -->
+    <link href='http://fonts.googleapis.com/css?family=Lato:400,700,900,400italic' rel='stylesheet' type='text/css'>
+  </head>
+  <body ng-app="standdown">
+    <!--[if lt IE 7]>
+        <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
+    <![endif]-->
+
+    <main ui-view></main>
+
+    <!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->
+    <!--
+    <script>
+        (function(b,o,i,l,e,r){b.GoogleAnalyticsObject=l;b[l]||(b[l]=
+        function(){(b[l].q=b[l].q||[]).push(arguments)});b[l].l=+new Date;
+        e=o.createElement(i);r=o.getElementsByTagName(i)[0];
+        e.src='//www.google-analytics.com/analytics.js';
+        r.parentNode.insertBefore(e,r)}(window,document,'script','ga'));
+        ga('create','UA-XXXXX-X');ga('send','pageview');
+    </script>
+    -->
+
+    <!-- build:js script/vendor.js -->
+    <!-- bower:js -->
+    <script src="vendor/jquery/dist/jquery.js"></script>
+    <script src="vendor/angular/angular.js"></script>
+    <script src="vendor/semantic/build/packaged/javascript/semantic.js"></script>
+    <script src="vendor/lodash/dist/lodash.compat.js"></script>
+    <script src="vendor/angular-ui-router/release/angular-ui-router.js"></script>
+    <script src="vendor/restangular/dist/restangular.js"></script>
+    <script src="vendor/satellizer/satellizer.js"></script>
+    <!-- endbower -->
+    <!-- endbuild -->
+
+    <!-- build:js scripts/main.js -->
+    <!-- inject:js -->
+    <script src="app.js"></script>
+    <script src="templates.js"></script>
+    <script src="common/directives/semantic.js"></script>
+    <script src="modules/member/member.js"></script>
+    <script src="modules/organization/organization.js"></script>
+    <script src="modules/landing/landing.js"></script>
+    <script src="modules/team/team.js"></script>
+    <script src="modules/settings/settings.js"></script>
+    <!-- endinject -->
+    <!-- endbuild -->
+  </body>
+</html>

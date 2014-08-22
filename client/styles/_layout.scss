@@ -1,0 +1,19 @@
+//****************************************************
+//	Site Layout Styles
+//****************************************************
+
+*,
+*:before,
+*:after {
+	box-sizing: border-box;
+}
+
+html, body {
+	height: 100%;
+}
+
+main {
+	display: table;
+	width: 100%;
+	height: 100%;
+}
